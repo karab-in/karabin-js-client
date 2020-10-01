@@ -6,13 +6,13 @@
 ![GitHub stars](https://img.shields.io/github/stars/LemmyNet/lemmy-js-client?style=social)
 </div>
 
-# lemmy-js-client
+# karabin-js-client
 
 A javascript / typescript http and websocket client and type system for [Lemmy](https://github.com/LemmyNet/lemmy).
 
 ## Installation
 
-`yarn add lemmy-js-client`
+`yarn add karabin-js-client`
 
 ## Usage
 
@@ -21,7 +21,7 @@ Check out the [Lemmy HTTP / websocket API](https://dev.lemmy.ml/docs/contributin
 ### Websocket
 
 ```js
-import { LoginForm, LemmyWebsocket } from 'lemmy-js-client';
+import { LoginForm, LemmyWebsocket } from 'karabin-js-client';
 
 let client: LemmyWebsocket = new LemmyWebsocket();
 this.ws.send(client.login(form));
@@ -30,7 +30,7 @@ this.ws.send(client.login(form));
 ### HTTP
 
 ```js
-import { LemmyHttp } from 'lemmy-js-client';
+import { LemmyHttp } from 'karabin-js-client';
 
 let client: LemmyHttp = new LemmyHttp(baseUrl);
 let jwt = await client.httpLogin(loginForm).jwt;
